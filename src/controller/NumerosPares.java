@@ -16,6 +16,6 @@ public class NumerosPares {
             }
             i++;
         }
-
+        scanner.close();
     }
 }

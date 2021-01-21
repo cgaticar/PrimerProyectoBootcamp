@@ -20,5 +20,6 @@ public class NumerosPrimos {
             i++;
         }
         System.out.println(primo);
+        scanner.close();
     }
 }

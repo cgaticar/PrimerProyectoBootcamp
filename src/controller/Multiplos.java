@@ -16,6 +16,6 @@ public class Multiplos {
             System.out.println(i * numerom);
             i++;
         }
-
+        scanner.close();
     }
 }

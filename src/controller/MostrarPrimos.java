@@ -34,6 +34,7 @@ public class MostrarPrimos {
             esPrimo(i);
             i++;
         }
+        scanner.close();
     }
 
 }
