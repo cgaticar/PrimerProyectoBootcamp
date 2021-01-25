@@ -38,4 +38,55 @@ public class StringUtils {
         }
         return arrStr;
     }
+
+    public static String rpad(String s, char c, int n)
+    {
+        String result = s;
+        for(int i = 0; i < n; i++)
+        {
+            result += c;
+        }
+        return result;
+    }
+
+    public static String removeSpaces(String s)
+    {
+        return s.replace(" ", "");
+    }
+
+    public static String ltrim(String s)
+    {
+        return s.replaceAll("^\\s*", "");
+    }
+
+    public static String rtrim(String s)
+    {
+        return s.replaceAll("\\s*$", "");
+    }
+
+    public static String trim(String s)
+    {
+        return s.replaceAll("\\s*$", "").replaceAll("^\\s*", "");
+    }
+
+    public static int indexOfN(String s,char c,int n)
+    {
+        int cont = 0;
+        int position = 0;
+        char[] strArray = s.toCharArray();
+
+        for(char ch : strArray)
+        {
+            if(ch == c)
+            {
+                cont++;
+                if(cont == n)
+                {
+                    return position;
+                }
+            }
+            position++;
+        }
+        return -1;
+    }
 }

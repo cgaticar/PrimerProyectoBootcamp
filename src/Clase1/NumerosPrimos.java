@@ -1,21 +1,25 @@
-package controller;
+package Clase1;
 
 import java.util.Scanner;
 
-public class NumerosPares {
+public class NumerosPrimos {
     public static void main(String[] args) {
         System.out.println("Ingresar numero:");
         Scanner scanner = new Scanner(System.in);
         int numero = scanner.nextInt();
-        int i = 0;
-        while (i <= numero)
+        int i = 2;
+
+        boolean primo = true;
+
+        while (primo && i < numero)
         {
-            if(i % 2 == 0)
+            if(numero % i == 0)
             {
-                System.out.println(i);
+                primo = false;
             }
             i++;
         }
+        System.out.println(primo);
         scanner.close();
     }
 }
