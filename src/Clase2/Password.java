@@ -14,6 +14,9 @@ public class Password {
         pattern = Pattern.compile(password_pattern);
     }
 
+    // public void setValue(String pwd) throws InvalidPasswordException
+    //                                   |-> declarativa, para llamar este metodo debo hacer un
+    //                                   try catch en donde lo invoco
     public void setValue(String pwd)
     {
         try
