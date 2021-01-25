@@ -1,8 +1,5 @@
 package Clase2;
 
-import Utils.FigurasGeometricasUtils;
-import Utils.StringUtils;
-
 public class Main {
     public static void main(String[] args) {
         /*Contador contador = new Contador(4);
@@ -61,12 +58,12 @@ public class Main {
 
         PasswordFuerte pwd = new PasswordFuerte();
         pwd.setValue("Caro8");
-        System.out.println(pwd.getPassword());
+        System.out.println(pwd.isValid());
         PasswordIntermedia pwd_inter = new PasswordIntermedia();
         pwd_inter.setValue("Caro1234");
-        System.out.println(pwd_inter.getPassword());
+        System.out.println(pwd_inter.isValid());
         PasswordSimple pwd_simple = new PasswordSimple();
         pwd_simple.setValue("Carolina");
-        System.out.println(pwd_simple.getPassword());
+        System.out.println(pwd_simple.isValid());
     }
 }

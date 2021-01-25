@@ -1,6 +1,5 @@
 package Clase2;
 
-import javax.sound.midi.Soundbank;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,18 +20,18 @@ public class Password {
         {
             Matcher matcher = pattern.matcher(pwd);
             if(matcher.matches()) password = pwd;
-            else throw new NullPointerException();
+            else throw new InvalidPasswordException();
 
         }
         catch (Exception ex)
         {
-            System.out.println("Password insegura");
+            System.out.println(ex);
         }
     }
 
-    public String getPassword()
+    public boolean isValid()
     {
-        return password;
+        return password != null;
     }
 
 }
